@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="address_select.css">
+    <script src="jquery.min.js"></script>
+    <script src="zd_district.js"></script>
+    <script src="address_select.js"></script>
+    <script>
+        var local_data = '43112910000801';
+    </script>
+    <style>
+        .shuoming{
+            width: 250px;
+            margin: auto;
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="shuoming">--直接选择--</div>
+    <input type="text" id="txt_dis">
+
+    <div class="shuoming">--初始化区划--</div>
+    <input type="text" id="txt_dis1">
+
+    <div class="shuoming">--固定最开始可以选择的区划--</div>
+    <input type="text" id="txt_dis2">
+
+    <div class="shuoming">--固定最后可以选到的区划等级--</div>
+    <input type="text" id="txt_dis3">
+
+    <div class="shuoming">--初始值+固定开头+固定最后--</div>
+    <input type="text" id="txt_dis4">
+
+
+    <script>
+        $(function () {
+            generateNode("txt_dis", "400px");
+
+            $("#txt_dis1").val(local_data);
+            generateNode("txt_dis1", "400px");
+            
+            generateNode("txt_dis2", "400px", "431100");
+
+            generateNode("txt_dis3", "400px", "431100", "5");
+
+            $("#txt_dis4").val(local_data);
+            generateNode("txt_dis4", "450px", "431100", "4");
+
+
+        })
+
+    </script>
+</body>
+
+</html>

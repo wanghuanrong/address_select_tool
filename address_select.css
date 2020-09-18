@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #005AA0;
+}
+
+/* 输入框区域 */
+
+.egarea{
+    position: relative; 
+    /* margin: 30px auto; 
+    width: 300px;  */
+    /* height: 40px; */
+    font-size: 13px;
+}
+
+
+.dis_select input {
+    width: 400px;
+    height: 20px;
+    position: relative;
+}
+
+.dis_select {
+    padding: 10px;
+    width: 500px;
+    /* height: 300px;  */
+    overflow: hidden;
+    border: 1px solid  #1A7CCB;
+    position: absolute;
+    left: 0;
+    top: 22px;
+    display: none;
+    z-index: 99;
+    background-color: white;
+}
+
+.dis_tab_list {
+    border-bottom: 2px solid #1A7CCB;
+}
+
+.dis_select .dis_tab_list a {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 3px;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    top: 2px;
+    margin-left: 5px;
+}
+
+.dis_select .dis_tab_list .bor_red {
+    position: relative;
+    border: 2px solid #1A7CCB;
+    border-bottom: 0;
+    background-color: white;
+}
+
+/* 地址显示区域 */
+
+.address_ul .dis_ul_div {
+    width: 100%;
+    overflow: hidden;
+}
+
+.address_ul .dis_ul_div .ul_list {
+    padding-top: 15px;
+}
+
+.address_ul .dis_ul_div .ul_list li {
+    float: left;
+    padding: 2px;
+    /* width: 120px; */
+    height: 20px;
+    line-height: 20px;
+    list-style: none;
+}
+
+.address_ul .dis_ul_div .ul_list .current a {
+    color: red;
+}
